@@ -22,4 +22,8 @@ public class SystemBootApplication {
         SpringApplication.run(SystemBootApplication.class, args);
         log.info("=============== SystemBootApplication 系统服务 - 启动成功 a931eeb16299d9de - ===============");
     }
+    
+    public static void scanComponentAfterInitDataSource(){
+        log.info("在初始化数据源后扫描组件的方法");
+    }
 }
